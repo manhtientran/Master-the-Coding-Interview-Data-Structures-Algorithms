@@ -24,4 +24,20 @@ function logAllPairsOfArray(array) {
   }
 }
 
-logAllPairsOfArray(boxes);
+// logAllPairsOfArray(boxes);
+
+function blah1(numbers) {
+  console.log("These are the numbers: ");
+  numbers.forEach(function (number) {
+    console.log(number);
+  });
+
+  console.log("And these are their sums: ");
+  numbers.forEach(function (firstNumber) {
+    numbers.forEach(function (secondNumber) {
+      console.log(firstNumber + secondNumber);
+    });
+  });
+}
+
+blah1(boxes);
